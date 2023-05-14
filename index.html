@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Arda / ardx.404</title>
+    <script>
+        var originalTitle = document.title; // orijinal başlığı kaydet
+      
+        window.onload = function() {
+          originalTitle = document.title; // sayfa yüklendiğinde başlığı kaydet
+        }
+      
+        window.onblur = function() {
+          document.title = "I'm sorry you're gone"; // sayfadan ayrılırken başlığı değiştir
+        }
+      
+        window.onfocus = function() {
+          document.title = originalTitle; // geri döndüğünde başlığı eski haline getir
+        }
+      </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/arda.jpg" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="discord.js"></script>
+</head>
+<body>
+    <video autoplay loop muted onclick="playaudio.play();">
+        <source src="drill-2.mp4" type="video/mp4">
+    </video>
+    <audio loop id="playaudio">
+        <source src="it-was-me-drill.mp3">
+    </audio>
+
+    <p class="head"><a href="index.html"><img class="imgc" src="img/arda.jpg" height="45"> Arda / ardx.404</a></p>
+    <div class="center">
+        <p class="first">
+            
+            <div class="icon">
+                <a href="https://www.snapchat.com/add/ardx.444?share_id=LL2-B8n98R8&locale=tr-TR">
+                <img class="imgc" src="img/snapchat.png" height="40">
+                <p class="i">Snapchat</p></a>
+            </div>
+            <span class="">•</span> 
+            <div class="icon">
+                <a href="https://www.instagram.com/ardx.404/">
+                <img class="imgc" src="img/instagram.png" height="40">
+                <p class="i">Instagram</p></a>
+            </div>
+            <span class="">•</span> 
+            <div class="icon">
+                <a href="https://youtube.com/@ardxedits476">
+                <img class="imgc" src="img/youtube.png" height="40">
+                <p class="i">Youtube</p></a>
+            </div>
+           
+        </p>
+        <p class="second">
+            
+        </p>
+    </div>
+
+    <div class="mobile">
+       <a href="index.html"><img class="imgc" src="img/arda.jpg" height="45"></a>
+       <p style="margin-top: 25px;">
+        <div class="icon">
+            <a href="https://www.snapchat.com/add/ardx.444?share_id=LL2-B8n98R8&locale=tr-TR">
+            <img class="imgc" src="img/snapchat.png" height="40">
+        </div>
+        <div class="icon">
+            <a href="https://www.instagram.com/ardx.404/">
+            <img class="imgc i" src="img/instagram.png" height="30">
+            </a>
+        </div>
+        <div class="icon">
+            <a href="https://youtube.com/@ardxedits476">
+            <img class="imgc i" src="img/youtube.png" height="30">
+            </a>
+        </div>
+       </p>
+    </div>
+    <p id="ds" style="display: none; pointer-events: none;">Discord ID Copied!</p>
+</body>
+</html>
